@@ -762,11 +762,11 @@
                     <h5 class="text-light">Google ReCaptcha:</h5>
                     <div class="selectgroup">
                         <label class="selectgroup-item">
-                            <input type="radio" name="google_re" id="captcha" value="true" class="selectgroup-input" checked="">
+                            <input type="radio" name="google_re" id="captcha" value="true" class="selectgroup-input">
                             <span class="selectgroup-button">On</span>
                         </label>
                         <label class="selectgroup-item">
-                            <input type="radio" name="google_re" id="captchaoff" value="false" class="selectgroup-input">
+                            <input type="radio" name="google_re" id="captchaoff" value="false" class="selectgroup-input" checked>
                             <span class="selectgroup-button">Off</span>
                         </label>
                     </div>
@@ -882,7 +882,6 @@
         
             <script>document.getElementById("withdraw").checked= true;</script>
         
-            <script>document.getElementById("captchaoff").checked= true;</script>
             <script>document.getElementById("social").checked= true;</script>
         									</div>
 									<div class="tab-pane fade" id="email">
@@ -972,7 +971,7 @@
             <div class=" form-row">
                 <div class="form-group col-md-6">
                     <h5 class="text-light">Captcha Secret</h5>
-                    <input type="text" name="secret" class="form-control bg-dark text-light" value="{{$smtp->key}}">
+                    <input type="text" name="secret" class="form-control bg-dark text-light" value="{{$smtp->secret}}">
                     <small class="text-light"> From https://www.google.com/recaptcha/admin/create  </small>
                 </div>
                 <div class="form-group col-md-6">
